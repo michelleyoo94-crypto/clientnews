@@ -77,8 +77,12 @@ def build_html(date_str, summaries):
 
 def main():
     data = load_raw_news()
-    # summaries는 Claude 에이전트가 채워서 넘겨줌
-    # 이 파일을 직접 실행하면 raw 데이터만 보여주는 기본 리포트 생성
+    # summaries.json이 있으면 Claude 에이전트가 작성한 요약 사용
+    summaries_override = {}
+    if Path("summaries.json").exists():
+        with open("summaries.json", encoding="utf-8") as f:
+            summaries_override = json.load(f)
+
     summaries = []
     for person in data["people"]:
         all_articles = []
@@ -91,11 +95,14 @@ def main():
                     "summary": a.get("summary", "")
                 })
 
-        # 요약 없이 기사 제목만 나열 (Claude가 요약 채우기 전 기본값)
-        summary_text = "\n".join([f"• {a['title']}" for a in all_articles[:10]]) if all_articles else "수집된 기사 없음"
+        name = person["name"]
+        if name in summaries_override:
+            summary_text = summaries_override[name]
+        else:
+            summary_text = "\n".join([f"• {a['title']}" for a in all_articles[:10]]) if all_articles else "수집된 기사 없음"
 
         summaries.append({
-            "name": person["name"],
+            "name": name,
             "description": person["description"],
             "summary": summary_text,
             "articles": all_articles
