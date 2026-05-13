@@ -1,6 +1,6 @@
-import feedparser
 import requests
 import json
+import xml.etree.ElementTree as ET
 import pandas as pd
 from datetime import datetime, timezone
 from urllib.parse import quote
@@ -15,47 +15,53 @@ def load_people():
     df = df.dropna(subset=["이름"])
     return df.to_dict("records")
 
+def parse_rss(content):
+    articles = []
+    try:
+        root = ET.fromstring(content)
+        ns = {"atom": "http://www.w3.org/2005/Atom"}
+        channel = root.find("channel")
+        if channel is None:
+            return articles
+        for item in channel.findall("item")[:5]:
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            published = item.findtext("pubDate", "")
+            summary = item.findtext("description", "")
+            articles.append({
+                "title": BeautifulSoup(title, "html.parser").get_text(),
+                "link": link,
+                "published": published,
+                "summary": BeautifulSoup(summary or "", "html.parser").get_text()
+            })
+    except Exception as e:
+        pass
+    return articles
+
 def fetch_google_news(name, description):
     query = quote(f"{name} {description}")
     url = f"https://news.google.com/rss/search?q={query}&hl=ko&gl=KR&ceid=KR:ko"
     try:
-        feed = feedparser.parse(url)
-        articles = []
-        for entry in feed.entries[:5]:
-            articles.append({
-                "title": entry.get("title", ""),
-                "link": entry.get("link", ""),
-                "published": entry.get("published", ""),
-                "summary": BeautifulSoup(entry.get("summary", ""), "html.parser").get_text()
-            })
-        return articles
+        headers = {"User-Agent": "Mozilla/5.0 (compatible; NewsBot/1.0)"}
+        resp = requests.get(url, headers=headers, timeout=15)
+        resp.raise_for_status()
+        return parse_rss(resp.content)
     except Exception as e:
-        print(f"[{name}] 뉴스 수집 실패: {e}")
+        print(f"  [Google] {name} 수집 실패: {e}")
         return []
 
 def fetch_naver_news(name):
-    # Naver News RSS (API 키 없이 사용 가능한 공개 RSS)
     query = quote(name)
     url = f"https://search.naver.com/rss?where=news&query={query}"
     try:
         headers = {"User-Agent": "Mozilla/5.0"}
         resp = requests.get(url, headers=headers, timeout=10)
-        feed = feedparser.parse(resp.content)
-        articles = []
-        for entry in feed.entries[:5]:
-            articles.append({
-                "title": BeautifulSoup(entry.get("title", ""), "html.parser").get_text(),
-                "link": entry.get("link", ""),
-                "published": entry.get("published", ""),
-                "summary": BeautifulSoup(entry.get("description", ""), "html.parser").get_text()
-            })
-        return articles
+        return parse_rss(resp.content)
     except Exception as e:
-        print(f"[{name}] 네이버 뉴스 수집 실패: {e}")
+        print(f"  [Naver] {name} 수집 실패: {e}")
         return []
 
 def fetch_dcinside(name):
-    # DC인사이드 갤러리 검색
     query = quote(name)
     url = f"https://search.dcinside.com/post/p/{query}"
     try:
@@ -74,7 +80,7 @@ def fetch_dcinside(name):
                 })
         return posts
     except Exception as e:
-        print(f"[{name}] DC인사이드 수집 실패: {e}")
+        print(f"  [DC] {name} 수집 실패: {e}")
         return []
 
 def main():
