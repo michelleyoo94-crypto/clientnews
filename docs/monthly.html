@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 월간 뉴스 요약</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Apple SD Gothic Neo', sans-serif; background: #f4f6f9; color: #222; }
+        header { background: #0d3b66; color: white; padding: 24px 32px; }
+        header h1 { font-size: 1.5rem; font-weight: 700; }
+        header p { font-size: 0.9rem; opacity: 0.7; margin-top: 4px; }
+        .nav { background: #1a1a2e; padding: 12px 32px; }
+        .nav a { color: #aaa; text-decoration: none; font-size: 0.88rem; margin-right: 20px; }
+        .nav a:hover { color: white; }
+        .container { max-width: 900px; margin: 32px auto; padding: 0 16px; display: flex; flex-direction: column; gap: 20px; }
+        .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+        .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+        .card-header h2 { font-size: 1.2rem; }
+        .badge { background: #e8f0fe; color: #1a73e8; font-size: 0.78rem; padding: 3px 10px; border-radius: 20px; }
+        .count { background: #fce8e6; color: #d93025; font-size: 0.78rem; padding: 3px 10px; border-radius: 20px; margin-left: auto; }
+        .summary { line-height: 1.8; color: #333; white-space: pre-wrap; }
+        details { margin-top: 16px; }
+        details summary { cursor: pointer; color: #666; font-size: 0.88rem; padding: 8px 0; border-top: 1px solid #eee; }
+        .article-list { list-style: none; margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+        .article-list li { font-size: 0.85rem; display: flex; justify-content: space-between; gap: 8px; }
+        .article-list a { color: #1a73e8; text-decoration: none; }
+        .article-list a:hover { text-decoration: underline; }
+        .date { color: #999; font-size: 0.78rem; white-space: nowrap; }
+        footer { text-align: center; color: #aaa; font-size: 0.8rem; padding: 32px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>고객 월간 뉴스 요약</h1>
+        <p>수집 기간: 2026-04-13 ~ 2026-05-13</p>
+    </header>
+    <nav class="nav">
+        <a href="index.html">일간 뉴스</a>
+        <a href="monthly.html">월간 요약</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>이하늬</h2>
+                <span class="badge">배우</span>
+                <span class="count">4건</span>
+            </div>
+            <div class="summary">• 드라마 '애마' 함께 출연한 신인 배우 방효린이 제62회 백상예술대상 여자 신인 연기상 수상, 수상 소감에서 이하늬를 통해 훌륭한 배우의 자질을 배웠다고 공개 언급
+• 이번 달 직접 단독 뉴스는 없으나 후배 배우들 사이 롤모델로 회자되는 긍정 이미지 확인
+• 총평: 조용한 한 달, 동료 배우 수상 소감으로 긍정 이미지 재확인</div>
+            <details>
+                <summary>원문 기사 전체 보기</summary>
+                <ul class="article-list">
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBud3ZBbmN2bndZTjVCbTcxNzNxRTdJeklVMFVETlRDVnRqOWl5XzZFUnVzeVlvU2RwbTRQMHFWQlNkWS0yYmlCNldoLU9LM2c?oc=5" target="_blank">'애마' 방효린, 여자 신인 연기상 "이하늬 통해 훌륭한 배우 무엇인지 배워" [백상예술대상] - v.daum.net</a>
+                <span class="date">Fri, 08 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yWTZfMlRXOWpkeHNkNVRzdVdKSGgwVUhzNldsLUhBZFVEdG9XRjAwVTlGMHZmeHBlZWl6c3JRcUV5UjRPSk1XOXFsYk9SOUZTdUlF?oc=5" target="_blank">'애마' 방효린, 신인상 수상 영광 이하늬에게로…"훌륭한 배우 배워" [62회 백상예술대상] - osen.co.kr</a>
+                <span class="date">Fri, 08 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SNUFLSmVZZS1udVI1QUtlaVNCd1hkd3VDMUhkOXlXNlVfQzVIMUtVdGtBU2g4dndYSG9yZjh4czIwbkMxeUhpT0Ffb2MzTFI3OHJmWXBnVERTRUpUU1hGMA?oc=5" target="_blank">'애마' 방효린, 신인상 수상 영광 이하늬에게로…"훌륭한 배우 배워" [62회 백상예술대상] - 네이트</a>
+                <span class="date">Fri, 08 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OZ1JMcnh0VjVMckdRN1hlbGRSWkFsVWwzR2FEZ3lxLU4xWl9MX1NyY3ZZVXpneDFiU0hveVVLOS05SDVSYThOUlA1MXN1dVg1alBj?oc=5" target="_blank">'애마' 방효린 신인상 "이하늬 통해 훌륭한 배우에 대해 배워"[백상예술대상] - 네이트</a>
+                <span class="date">Fri, 08 May 2026</span>
+            </li></ul>
+            </details>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>이혜영</h2>
+                <span class="badge">인플루언서</span>
+                <span class="count">2건</span>
+            </div>
+            <div class="summary">• 수집된 기사가 동명의 다른 인플루언서(양정원 씨 관련 사기·향응 의혹 사건)와 혼선 가능성 있음
+• 검찰이 현직 경찰관에 구속영장 청구, 인플루언서 사건 덮었는지 수사 중
+• 총평: 동명이인 이슈 가능성 — 직접 연루 여부 추가 확인 권장</div>
+            <details>
+                <summary>원문 기사 전체 보기</summary>
+                <ul class="article-list">
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE84SW05c1VXZ1RRM0wtOGhTSlRIblgyUDZ2U3drNERXc2NzMms0clo5WHQ0Vnl6YVdyY1RHejhadFlDOUQtY1dQTmZRcGx5dE0?oc=5" target="_blank">접대 받고 인플루언서 사건 덮었나…檢, 현직 경찰관에 구속영장 - v.daum.net</a>
+                <span class="date">Mon, 20 Apr 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE9meXpnb2YtZXRyUmZYbFFhejNzUzRJcDVnNVpxN241aUg2aDROX1M0WVMzamtEVGpBbGJKYTlfTWs0ejg0S2c?oc=5" target="_blank">‘사기·향응’ 의혹 인플루언서 양정원씨 소환…“남편의 경찰 접촉 몰랐다” - v.daum.net</a>
+                <span class="date">Wed, 29 Apr 2026</span>
+            </li></ul>
+            </details>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>권오경</h2>
+                <span class="badge">한양대교수 SDI사외이사</span>
+                <span class="count">0건</span>
+            </div>
+            <div class="summary">• 이번 달 특이사항 없음</div>
+            <details>
+                <summary>원문 기사 전체 보기</summary>
+                <ul class="article-list"></ul>
+            </details>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>김병주</h2>
+                <span class="badge">MBK파트너스</span>
+                <span class="count">5건</span>
+            </div>
+            <div class="summary">• 홈플러스 사태 관련 검찰 수사 재시동 — 신영증권 관계자 조사 진행 중 (단독 보도)
+• 김병주 회장, 당국이 위법 행위 없다고 확인했다고 공개 발언 → 파장 지속
+• MBK파트너스, 일본 알루미늄 캔 3위 기업 인수 추진 (해외 딜 확장)
+• 총평: 홈플러스 수사 이슈 진행 중, 해명 발언 역풍 가능성 주목 필요</div>
+            <details>
+                <summary>원문 기사 전체 보기</summary>
+                <ul class="article-list">
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE8wZ3dFQXNFTndtZlRRRWxJby11Ujl1b2ZtOThVT2dGdlFGM0pUZU9TQnBucEJsSHpFMVFWSC1oeGk2VHlHRlYzNzVOV2VsTV80TnlScHFBZC1KMmVUZU9IUzZGUTlBeWUwWmtWTndR?oc=5" target="_blank">[짧은생각] 김병주 MBK파트너스 회장, 월급은 얼마일까? - 뉴스후플러스</a>
+                <span class="date">Mon, 11 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnU19KODU4UVl1LTBBVVNPQjY0M2IwdkFLOUFrdm5TWEhRYUJ6VHBxZzFqMVlqNU40UHc3UzFuRll4SVZiV0pmNTljbXYxWFk?oc=5" target="_blank">[단독] 검찰, ‘MBK 홈플러스 사건’ 수사 재시동…신영증권 관계자 조사[세상&] - v.daum.net</a>
+                <span class="date">Wed, 13 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE85d1VBeThXbTFnOC1kWE9maXR1cUJJaXBmTGRIeWlnVDZJYUFJTk95RUt0S0JNQ19qWFhuSi1tX2ZUS3RZSlB3cGVmOTZFd0U?oc=5" target="_blank">MBK파트너스, 日 알루미늄 캔 3위 품는다 - 딜사이트</a>
+                <span class="date">Mon, 11 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wWnhhNnhSVEVzd28zc0dTNUNLb2JoYmVMVmtJRDZ2MWN2SlNRM2FsWHl6REllWFNJdXFtSFBLNDh5V1hIaHZxdmgxMlZkcE9FazdSVWtR?oc=5" target="_blank">MBK 김병주 "당국이 위법 행위 없다고 확인"…홈플 사태 언급 - 지디넷코리아</a>
+                <span class="date">Mon, 27 Apr 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE81bUwtTFBKUnRQN3laQnhmZE5tRzVjSWRneWlIMmZPVVlRaGRhcWY2WmxvTmRpSl9tbXpZZ0xGeE9nb3duYXdzR0xyTEdzalB0REYtdnFWYlNUOXM?oc=5" target="_blank">홈플러스 사태 아직 안 끝났는데…MBK 김병주 “위법행위 하지 않았다” 발언 파장 - 경기일보</a>
+                <span class="date">Mon, 27 Apr 2026</span>
+            </li></ul>
+            </details>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>서정진</h2>
+                <span class="badge">셀트리온</span>
+                <span class="count">12건</span>
+            </div>
+            <div class="summary">• 짐펜트라(크론병 치료제) 미국 처방 1분기 185% 급증, 분기 최대 기록 달성
+• 프랑스 114년 역사 약국 체인 지프레(9,000개 약국) 인수 완료 — 유럽 유통망 강화
+• 다우존스 지속가능경영 월드 지수 2년 연속 편입 (ESG 경영 인정)
+• 2세 경영 한계로 서정진 회장 직접 재등판, 형제경영 체제 강화 중
+• 혼외자 분쟁 및 친인척 계열사 편입 논란 지속 / 한국 부자 3위, 총자산 12조원
+• 총평: 짐펜트라 성장·유럽 인수 긍정 흐름, 오너 리스크(혼외자·가족경영)는 계속 주시 필요</div>
+            <details>
+                <summary>원문 기사 전체 보기</summary>
+                <ul class="article-list">
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zTVJPV3YtSEtyUnMwZXRjUTlVVWlvbERqUWUzWmY4dXJobnZwdGdnVmpoWjhDSDRrM0o4REdDb2o0RnViTTROeWswWHlVVmdqX2h5QjRtOE1QVkkyR2FKWg?oc=5" target="_blank">셀트리온, 다우존스 지속가능경영 월드 지수 2년 연속 편입 - 뉴스1</a>
+                <span class="date">Wed, 13 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQU3ZIaHFFNXNmREVWeHA1dzBEQmhnc2VxQ2hjSTc4Q2JWTlpRVjBwWkhubTdQdUNFNlpLWE5iWER4Z0NlZHVjclRlZnB2NEgtUDktSC1yR0tKTXNiZDNwc2hzdThWTnRXbC11YjdEZjF4dlRJVzViMkIyUGRvaTNKelFkOHN5anfSAZsBQVVfeXFMTmU1WGgwUExGc00zSmFnLVJmcWxFRzRfb1A0YlZndjZJcncwa0ZUZmtnR0psbUxLbk1fVFp6YkdQUFprVmEwMTFwME9VWkpvajFjeF96UHkwZm9OZ29xV0ZrMUdTZm9may1QZFdGYU4wRDBMRDRTck1ONnlld3lqaHA5WUNnT01mMzd2Q2syRXZ6RlRSWEZhQ3ZtRXc?oc=5" target="_blank">60代 창업 공신 떠나고 세대 교체...’형제경영’ 힘 실리는 셀트리온 - 조선비즈 - Chosunbiz</a>
+                <span class="date">Tue, 12 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xeEtaSkdsUlBybjJVdW41R040Mm91bUotcXZTWWROMVZBUEdJaGZmdjZsNDk4Zl9PSDdldHdHRXFNal80aDJZX18wdFN3N0dqN2ZB?oc=5" target="_blank">서정진의 뚝심 통했다…셀트리온 짐펜트라, 부진 씻고 '성장' 시동 - 네이트</a>
+                <span class="date">Wed, 13 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9SaGVjVnBYR3VmX3R0dFdwYXhMcWk3eXdycjlwcDlsaElZVnlUT3JUSExOQ29lMEdhdENjUnlKOVMxdS1SaUxOZDRYanJ6Zms4cm1mVmIwVjFfaTBGeUpJS1hfc29ySkZTTkZr?oc=5" target="_blank">서정진 셀트리온 회장의 야심작, ‘짐펜트라’ 미국서 성장 궤도 진입 - CEO스코어데일리</a>
+                <span class="date">Sun, 10 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE42MkV5UWtZSzhJZTlBQWw2cDFqTlV3Tm1lNGdGMDBqY3JSRDFLaGRrVlFOV0JHMS1WVXRKYUM5WVlDZTBNc1ZsMHdKS3dLYnU1UmRKOFA2MU9YS0dBZHIzRmMxX0RQNGtnb1dRNUZOV3VhQdIBdkFVX3lxTFBCUHJXQTZTdElWTG1rbXRjdWN3b0lGWTlQVVlPN3BxYzBDaDlMSG5NWnBldHFjZENxNGU0WVk0VFdzcWFKM092c0UyUXV1NDdFSGx2bTRwLUtUMnp5ajlvandhb3NsMEpRNGhJSVkyMGZKaVdBYVE?oc=5" target="_blank">셀트리온, 공격적 주주환원에도 시장 냉담···짐펜트라 흥행 시험대 - 시사저널e</a>
+                <span class="date">Mon, 11 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1CeUhTNWFPR24zSlBsdXdzdGRFZTBoS0JBcjJKVGxkaHg1TEpJQlltVGZnSUt4Y3RMRktGbUtRZFpfWnlKUG1PdUYtZ2FEeTFEeDRVaEtKVF9iSXfSAWBBVV95cUxQVXE5UTRycEFYQ1pDbGg0azlFeFdhcl9IcjgxU2ptZzNydVd3WXNpa0ZKYkFhcmZxNGxEbms0MWxEdmNNU1NOYzNlZVByQTJSS01BcmhORWE2UnhYRmdob3o?oc=5" target="_blank">셀트리온 "1분기 미국 짐펜트라 처방 185%↑…분기 기준 최대" - 연합뉴스</a>
+                <span class="date">Fri, 08 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5aQU1iOV9sV1ItNHdHZWlkN09UTmZzODdYbHdhZ3oyQ1RnVGhtVjZpSndYNWpLRS1ZSXBiV1hSRTBQb1J6YkgwMXEtV0dFQVl1MlRfVHZ4N2NiUUtWZjJaaHV6d0FvVzRaVmxpRHR4S28ydjA?oc=5" target="_blank">셀트리온 1분기 '계단식 성장' 충족, 서정진 신제품 안착으로 실적 목표 일군다 - 비즈니스포스트</a>
+                <span class="date">Wed, 06 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFB5ampDRXEtVE9aOVVyQ1FOSUxoWHpQNEhKY2NTTXUzMFpmbzg4M0VIaFFWejZra2E5M3EzTWVlYTR6bjVoQXpJTnRLakktbHpmTkRvZzJicHRYVkJyNUxLbmREVQ?oc=5" target="_blank">서정진 셀트리온 회장, 韓 부자 3위…총자산 12조원 - 더구루</a>
+                <span class="date">Thu, 16 Apr 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQSDdhb0pFa0c0UGJPakZCQ2Z5NmRlYlI0dXdJMjdVREtteUJBcTV2YkdYVFI0NG40VTdNeW9xLW51WG5SVzBFdHVuVzNGVlQ0ZUd5REhtdFpYQmpVWk4yMVhwMXbSAWhBVV95cUxNYnRFa201NDdmcEVSS096djY5Zm9kak8takNxU1daOTRHNTZGY1N4M29hSDdwcEdfajMtV0p6TFdQYlJyUkRGcldhZlNXWnNuSzNiU2QxbklEYVZRQzRqX1pvX1hCN2pnWg?oc=5" target="_blank">서정진의 셀트리온, '혼외자 분쟁'과 친인척 계열사 편입 논란 - CEO저널</a>
+                <span class="date">Fri, 17 Apr 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPbElHS1RpNnlDb1lCV25IZHlDZGxBQ0c3VlVIZjc0SjBqclVYY0tlc0J3OWRDMVZIMnZMdlZYZVBYRWlfWmc2cXU0RXJLZTktdzNDbkY1ZG1rLXh0R080ZzNpV2dNWHBGaFhjNmwwYkhiOHBQQ0djLUotblFqSzBWU2xwQ2kzREXSAZsBQVVfeXFMUFdZajIyMVVuSVZtMDUzVlpDWnNGYWloOVF2NGhMdmNJTHN5WFhwODA1TWFPNlFDc2JuSjJRVUlPWFJaS1MtWE1lR280NHJpUVNlU2R5WGFnTlF1SjM4clFRdGIyeDRYZkpHWi1US0RVMlhhem44aGpUbmJOTTU3ZU41TkZ2WFF4dEVHQTdFY0JnV3hucVRwdndleEk?oc=5" target="_blank">셀트리온, 佛 9000개 약국 쥐었다… 114년 역사 지프레 인수 - 조선비즈 - Chosunbiz</a>
+                <span class="date">Mon, 11 May 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFB2d3FmMm9WY3dKSmN4bWVwbjFzQ3hucjUwZ05CeWJSUWcwQWR1dE5TakNUTWM2bHV0c0pVLWRKLXBuZTlPSzlaRzZFNlAtM1lqa2NNRlBTSl9USTNnZHRfQ0JwNVjSAWhBVV95cUxPRmF6MDFubURFWDhYalZVTlNHOTN1QnJ6Q09kRFZYbGVTZmtNRWozLXppd1Z3YXhHWDNlaUswR0N1SVYyNVlyc0d2VmZaTUVDZlJuM1dzV3VRMjZGVnZpOTJneFhKZXZfdA?oc=5" target="_blank">서정진 셀트리온 회장, 2세 경영 한계 드러낸 '2년 만의 구원투수' 등판 - CEO저널</a>
+                <span class="date">Sat, 18 Apr 2026</span>
+            </li>
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZMU9aNHUzdjBXaUQ0dTdRZGFuc3k0VEk4UjBXTkxlYzI3TG5XdkxReW9uZENYRGxRVVlyR19RLWJ3b3puWjBFQW1fM094YlV2cXFSRmpwel90V3NUVThFM0V4SGLSAWhBVV95cUxQVUM0Z0ZqY0YzSXE2Vjh5WEFWQjhJS09rdTNKWGVBQTRYVXd6X1VTQnl4MkUzVzNGQXZCOWV1V0Zrdy1RaHRPVXFNUTRZYkpRSlRtemJxOUJDTVYtcjBHTkdhcmNRVFMxRg?oc=5" target="_blank">서정진 회장, 무리한 셀트리온제약 통합 시도와 백지화 사태 - CEO저널</a>
+                <span class="date">Tue, 14 Apr 2026</span>
+            </li></ul>
+            </details>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>정정이</h2>
+                <span class="badge">현대해상</span>
+                <span class="count">1건</span>
+            </div>
+            <div class="summary">• 정몽윤 현대해상 회장 장녀로, 현대하임자산운용 대표직 연임 확정 (단독 보도)
+• 총평: 경영 승계 구도 안에서 자산운용 부문 입지 유지</div>
+            <details>
+                <summary>원문 기사 전체 보기</summary>
+                <ul class="article-list">
+            <li>
+                <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE91cXhlMEJkMkh5SndaU1U5UHhGa0s4eU1CbUtSY2VpbWM5Y2hDeEpUMVVfak16OGszOEdYU0JjekJvQllnLXBKdzhwU3QtSkQtdmNVdGlB?oc=5" target="_blank">[단독] 정몽윤 현대해상 회장 장녀 정정이, 현대하임자산운용 대표 연임 - 비즈한국</a>
+                <span class="date">Tue, 14 Apr 2026</span>
+            </li></ul>
+            </details>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>송창현</h2>
+                <span class="badge">42dot</span>
+                <span class="count">0건</span>
+            </div>
+            <div class="summary">• 이번 달 특이사항 없음</div>
+            <details>
+                <summary>원문 기사 전체 보기</summary>
+                <ul class="article-list"></ul>
+            </details>
+        </div></div>
+    <footer>Claude Code 생성</footer>
+</body>
+</html>
