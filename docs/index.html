@@ -5,135 +5,130 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>고객 일간 뉴스 — 2026년 05월 13일</title>
 <style>
-  :root { --primary: #1a1a2e; --accent: #4f8ef7; --bg: #f0f2f8; --card: #fff; --text: #1a1a2e; --muted: #888; }
+  :root { --primary: #1a1a2e; --accent: #4f8ef7; --bg: #f0f2f8; --text: #1a1a2e; --muted: #888; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-  header { background: var(--primary); color: #fff; padding: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-  .header-left h1 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.5px; }
-  .header-left p { font-size: 0.88rem; opacity: 0.6; margin-top: 4px; }
-  .header-right { display: flex; gap: 10px; }
-  .nav-btn { background: rgba(255,255,255,0.12); color: #fff; border: none; padding: 8px 18px; border-radius: 20px; font-size: 0.85rem; cursor: pointer; text-decoration: none; transition: background 0.2s; }
-  .nav-btn:hover, .nav-btn.active { background: var(--accent); }
-  .container { max-width: 960px; margin: 36px auto; padding: 0 20px; display: flex; flex-direction: column; gap: 16px; }
-  .card { background: var(--card); border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid var(--accent); transition: box-shadow 0.2s; }
-  .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-  .card-top { margin-bottom: 14px; }
-  .name-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .name-row h2 { font-size: 1.15rem; font-weight: 700; }
-  .role { background: #eef2ff; color: #4f6ef7; font-size: 0.78rem; padding: 3px 12px; border-radius: 20px; }
-  .count-badge { background: #fff0f0; color: #e53935; font-size: 0.78rem; padding: 3px 10px; border-radius: 20px; margin-left: auto; }
-  .count-badge.zero { background: #f5f5f5; color: #aaa; }
-  .summary { font-size: 0.93rem; line-height: 1.9; color: #333; white-space: pre-wrap; }
-  details { margin-top: 16px; border-top: 1px solid #eee; padding-top: 12px; }
-  details summary { cursor: pointer; font-size: 0.83rem; color: var(--muted); list-style: none; }
-  details summary::before { content: "▶ "; font-size: 0.7rem; }
-  details[open] summary::before { content: "▼ "; }
-  .article-list { margin-top: 10px; list-style: none; display: flex; flex-direction: column; gap: 8px; }
-  .article-list li { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; font-size: 0.85rem; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: var(--bg); color: var(--text); }
+  header { background: var(--primary); color: #fff; padding: 28px 36px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .header-left h1 { font-size: 1.6rem; font-weight: 800; }
+  .header-left p { font-size: 0.85rem; opacity: 0.55; margin-top: 4px; }
+  .nav { display: flex; gap: 8px; }
+  .nav a { background: rgba(255,255,255,0.12); color: #fff; border: none; padding: 8px 18px; border-radius: 20px; font-size: 0.83rem; text-decoration: none; }
+  .nav a.active, .nav a:hover { background: var(--accent); }
+  .container { max-width: 960px; margin: 32px auto; padding: 0 20px; display: flex; flex-direction: column; gap: 14px; }
+  .card { background: #fff; border-radius: 14px; padding: 22px 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); border-left: 4px solid var(--accent); }
+  .name-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+  .name-row h2 { font-size: 1.1rem; font-weight: 700; }
+  .role { background: #eef2ff; color: #4f6ef7; font-size: 0.76rem; padding: 3px 11px; border-radius: 20px; }
+  .count-badge { background: #fff0f0; color: #e53935; font-size: 0.76rem; padding: 3px 10px; border-radius: 20px; margin-left: auto; }
+  .count-badge.zero { background: #f5f5f5; color: #bbb; }
+  .summary { font-size: 0.92rem; line-height: 1.95; color: #2c2c2c; white-space: pre-wrap; }
+  details { margin-top: 14px; border-top: 1px solid #eee; padding-top: 10px; }
+  details summary { cursor: pointer; font-size: 0.82rem; color: var(--muted); list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: "▶  "; font-size: 0.68rem; }
+  details[open] summary::before { content: "▼  "; }
+  .article-list { margin-top: 10px; list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .article-list li { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; font-size: 0.83rem; }
   .article-list a { color: var(--accent); text-decoration: none; flex: 1; line-height: 1.5; }
   .article-list a:hover { text-decoration: underline; }
-  .src-tag { background: #f0f4ff; color: #7c9ef7; font-size: 0.72rem; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
-  footer { text-align: center; padding: 40px; color: var(--muted); font-size: 0.8rem; }
+  .src-tag { background: #f0f4ff; color: #7c9ef7; font-size: 0.7rem; padding: 2px 7px; border-radius: 10px; white-space: nowrap; }
+  footer { text-align: center; padding: 36px; color: var(--muted); font-size: 0.78rem; }
 </style>
 </head>
 <body>
 <header>
   <div class="header-left">
     <h1>고객 일간 뉴스</h1>
-    <p>2026년 05월 13일 기준 수집</p>
+    <p>2026년 05월 13일 · Claude Code 요약</p>
   </div>
-  <div class="header-right">
-    <a class="nav-btn active" href="index.html">일간</a>
-    <a class="nav-btn" href="monthly.html">월간 요약</a>
-  </div>
+  <nav class="nav">
+    <a class="active" href="index.html">일간</a>
+    <a href="monthly.html">월간 요약</a>
+  </nav>
 </header>
 <div class="container">
 
     <div class="card">
-        <div class="card-top">
-            <div class="name-row">
-                <h2>이하늬</h2>
-                <span class="role">배우</span>
-                <span class="count-badge">5건</span>
-            </div>
+        <div class="name-row">
+            <h2>이하늬</h2>
+            <span class="role">배우</span>
+            <span class="count-badge">5건</span>
         </div>
-        <div class="summary">• 드라마 '애마' 공동 출연 신인 배우 방효린이 제62회 백상예술대상 여자 신인 연기상 수상, 수상 소감에서 "이하늬를 통해 훌륭한 배우가 무엇인지 배웠다"고 공개 언급
-• 직접적인 단독 뉴스는 없으나 후배 배우들 사이에서 롤모델로 꾸준히 회자되는 긍정적 이미지 확인</div>
+        <div class="summary">• [주의] 미등록 기획사 운영 혐의로 이하늬 및 남편이 경찰에 의해 검찰 송치
+• 드라마 '애마' 공동 출연 신인 방효린이 제62회 백상예술대상 여자 신인 연기상 수상, 수상 소감에서 이하늬를 롤모델로 언급하며 긍정 이미지도 공존
+• 법적 이슈와 긍정 이미지가 동시에 부각되는 상황 — 검찰 수사 결과 주시 필요</div>
         <details><summary>원문 기사 보기 (5건)</summary><ul class="article-list"><li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBud3ZBbmN2bndZTjVCbTcxNzNxRTdJeklVMFVETlRDVnRqOWl5XzZFUnVzeVlvU2RwbTRQMHFWQlNkWS0yYmlCNldoLU9LM2c?oc=5" target="_blank">'애마' 방효린, 여자 신인 연기상 "이하늬 통해 훌륭한 배우 무엇인지 배워" [백상예술대상] - v.daum.net</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPU0E1azNPLVZwT3Fydm04cDZuWF80OHN4ampCam8wSU5PYnE1RnpQSjI2SDNJXzRuOTNJR0hRRGxLTmZyemdiVEk5U1h1d0ViVi1SWWdyN2pqdVZxeXluZUY4cGdlVjhwX0VYVEllVDZJTDNxVEd3czJ5Z0R6cmJRejBrYldPdmpVRElYLWN4VFZPdjTSAacBQVVfeXFMTlJmYVJMWmU0ZFp5MVM3ZkdybjZBV1NwTFR0T2RfeFRBcGl6OGdGSHVaNTVKMW5HRl85dGh3ZUw5R1BPNzBiR3RGZjhadFFCUTdyV1RTWG5ITjRzUDMtd0xFejd4OGF0bEVEZHluRktzYmFHSjFnMWREaVVVR2tNUmtvTlZoMS1XOXE2Ri1SS05aVmZXd0twVHBISHJNSGZfNzVWd2ZFekk?oc=5" target="_blank">‘미등록 기획사 운영 혐의’ 배우 이하늬, 남편도 검찰 송치 - 조선비즈 - Chosunbiz</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yWTZfMlRXOWpkeHNkNVRzdVdKSGgwVUhzNldsLUhBZFVEdG9XRjAwVTlGMHZmeHBlZWl6c3JRcUV5UjRPSk1XOXFsYk9SOUZTdUlF?oc=5" target="_blank">'애마' 방효린, 신인상 수상 영광 이하늬에게로…"훌륭한 배우 배워" [62회 백상예술대상] - osen.co.kr</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SNUFLSmVZZS1udVI1QUtlaVNCd1hkd3VDMUhkOXlXNlVfQzVIMUtVdGtBU2g4dndYSG9yZjh4czIwbkMxeUhpT0Ffb2MzTFI3OHJmWXBnVERTRUpUU1hGMA?oc=5" target="_blank">'애마' 방효린, 신인상 수상 영광 이하늬에게로…"훌륭한 배우 배워" [62회 백상예술대상] - 네이트</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBkanZYN2FfRU9zNnlNbWJSR2RwTjFzcmNXTVRONTRRcVBVWG9rXzI3dlh4cnM4V05QZmpTc3hrbHliT010VGcyR0hxV3hHQlNtZGVjandFVmlDYVnSAWBBVV95cUxOQlhrczBEZjlZYjljYjVPaWs5eEVMQkRjOUNWTnZ5Z1RDellzbXI1d1pLd0ZxbFNlYU9jMVFBVURacHNPMWJObEprakxPNlNEZzJWV2owT1l2al9KU19XTDg?oc=5" target="_blank">경찰, '미등록 기획사 운영' 배우 이하늬 검찰에 송치 - 연합뉴스</a><span class="src-tag">구글</span></li></ul></details>
     </div>
     <div class="card">
-        <div class="card-top">
-            <div class="name-row">
-                <h2>이혜영</h2>
-                <span class="role">인플루언서</span>
-                <span class="count-badge">5건</span>
-            </div>
+        <div class="name-row">
+            <h2>이혜영</h2>
+            <span class="role">인플루언서</span>
+            <span class="count-badge">5건</span>
         </div>
-        <div class="summary">• 인플루언서 관련 검색 결과 동명이인(양정원 씨 관련 사기·향응 의혹 사건) 기사 혼선 가능성
-• 검찰이 해당 사건에서 현직 경찰관에 구속영장 청구, 사건 은폐 여부 수사 중
-• 본인 직접 연루 기사인지 추가 확인 권장</div>
+        <div class="summary">• 결혼 14주년 기념 SNS 게시물 업로드, 남편 얼굴 공개 및 일상 공유로 긍정 반응
+• '이 바닥에 얼씬도 하지 마' 제목 기사에서 이혜영·탁재훈 관련 내용 언급 (구체적 내용 확인 필요)
+• 양정원 씨 관련 인플루언서 사기·향응 의혹 기사는 동명이인으로 본인과 무관</div>
         <details><summary>원문 기사 보기 (5건)</summary><ul class="article-list"><li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE84SW05c1VXZ1RRM0wtOGhTSlRIblgyUDZ2U3drNERXc2NzMms0clo5WHQ0Vnl6YVdyY1RHejhadFlDOUQtY1dQTmZRcGx5dE0?oc=5" target="_blank">접대 받고 인플루언서 사건 덮었나…檢, 현직 경찰관에 구속영장 - v.daum.net</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE9meXpnb2YtZXRyUmZYbFFhejNzUzRJcDVnNVpxN241aUg2aDROX1M0WVMzamtEVGpBbGJKYTlfTWs0ejg0S2c?oc=5" target="_blank">‘사기·향응’ 의혹 인플루언서 양정원씨 소환…“남편의 경찰 접촉 몰랐다” - v.daum.net</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE01LWNHQjIyVjhreDdiaWtQanViNzNFdEtfYVNaRFVmRGRLU0tmb2ZkMHZTckpaWk9QdVlQaUctSGRtSFVNczJTMGE1NVNZZ2Ezc25DTWdUMmRteVladHZLOWowTHpRcHJB?oc=5" target="_blank">이혜영, 결혼 14주년 자축 ♥남편 얼굴 공개부터 뽀뽀까지 “지브리풍 케이크 영상 눈길” : 네이버 블로그 - Naver Blog</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5wb0ZPV3NZTjZvOU1kekZMemtheEczSU5MTmlQWVp4bzQ5Z0tYQ2ZoLXlKcHpMU3hNMG9JcnN4U0xBLTBIQlIxbmhDU05RRmx1M3EzQlExbTlrNXVJQ1h6Q3p5MTE0X1FTcjI3a1NfN2PSAXRBVV95cUxOTy04RlpWN3ZMY0l3ZnRzX2loc083dDRhY1hiRmIyX0xoN0ktbVZmenZmZHR1ZDJnVjg4eWlDMy1NbUQ4X1BWYmhVb0hQRlIwZzNqQmZZTTQ4MUZpeElKVXM4RmwzMUJUSllSR1lkYnJRcFlXdA?oc=5" target="_blank">산수 지적 정현규, 막말 논란 후 두 달 만에 SNS 재개[NOW★이슈] - 스포츠한국</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vd0NlbDZFN2lNSDExUGgtTGZqSjRiOEhGUUlrS3V5ODZMX3BGMUlBVnZ4dkNiRHJ5VTZjWE5qYmM0Q1hVUk9vNlA4MmdBdGwtMkRFbnBOeWw5cE9JRTlUTtIBeEFVX3lxTE5DTDRPdTMtaWhHa2c3TFlWc2w4X09RUDFKQ3NQYXFQQmhxbkpUMTBqZUdDNDZYUkZwMlVTNWNrT1EzUEtRcTNBV2RWSDZXYzE2amo5SEZ5NE4xd2JqTnNzc0xxbjVFbEN6LVY1X2FweFVUckhCMzg0UA?oc=5" target="_blank">"이 바닥에 얼씬도 하지 마"…이혜영·탁재훈 무슨 일? - newsis.com</a><span class="src-tag">구글</span></li></ul></details>
     </div>
     <div class="card">
-        <div class="card-top">
-            <div class="name-row">
-                <h2>권오경</h2>
-                <span class="role">한양대교수 SDI사외이사</span>
-                <span class="count-badge">5건</span>
-            </div>
+        <div class="name-row">
+            <h2>권오경</h2>
+            <span class="role">한양대교수 SDI사외이사</span>
+            <span class="count-badge">5건</span>
         </div>
-        <div class="summary">• 오늘 특이사항 없음</div>
+        <div class="summary">• 삼성SDI 사외이사진 전원 교체 단행 — 권오경 포함 기존 사외이사 교체, 이미경 신규 선임
+• 삼성SDI·삼성SDS, '선임 사외이사제' 전격 도입 (이사회 독립성 강화 조치)
+• SDI 사외이사직 종료로 보임 — 향후 행보 주시 필요</div>
         <details><summary>원문 기사 보기 (5건)</summary><ul class="article-list"><li><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1vUXF3MXhYZ0loeDdta2hKT0ZwUnd1YVA3eFFKTXhMeVpkcmZ5VGU2X0p4d0FzNWtQcmV0UjFJMWt3eUhtenU5STdoemhCSFVhVzNtUTgtNko4LXRRZnpnVTZXTnozU190bnZr?oc=5" target="_blank">권오경 융합전자공학부 교수, 'CES 2024' 참석 - 뉴스H</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BbFZiUTJBSzRTM05nZFp6YldEdzIwaW9ZZW5jOU1rQ1g3Wkg5MFdZcnZURUJZeGV3d0pVUnJGc052b3N5MUhhcUxoaUU1X1JfR1dtbg?oc=5" target="_blank">[사외이사] 삼성SDI, 이사회 유일 '반대' 표명 박태주 재선임 탈락...이미경 신규 선임 - 더밸류뉴스</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9kNU9kMlpKU2NPOG02UVNyQVV0a1p4NFIxZzNUNXRuME5UWmp2M1Fvc2t3RUxTSTV6U1MxSkF2aVdXRnUwTmprSlNDS3ZYOHhDdzM2X09oR1U5U2hlRk5TYkNUbTBibXFHZmxpM1E1RHE1UVE?oc=5" target="_blank">삼성SDI 사외이사 권오경 김덕현 박태주 최원욱으로 다 교체 - 비즈니스포스트</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE94MzU2cTk2V0dWM2F0akttcXFTS3QzZTlBRHhfXzBDbGVYUHRZYUlxc3cycS1Rc2RRZmhQaFFiOHI3SXZxckZBa2VhRVlnWXBEcjExNWJLcHFFeFJOUDl2Qk9jNDU2dUQwdWc?oc=5" target="_blank">삼성SDI·삼성SDS, ‘선임 사외이사’ 제도 도입 - 한겨레</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE55QXladjk2YmhXZFN4VGdfWDBIcmlJRkdxMWJBNThCUDJPLUkxbzZVVEpxam5zek5fUDkzVzJ0eWNVT0Frc1Zhd3dRLXF1MzdLOW5qbHJKYjA1UdIBVEFVX3lxTE1hUEVDNDFkVFhpUmNNeXFYOUhUZEZEYVJVU0p3SU1EXzc0Q210cHh4RDZNcDFnYjFFYU9WUU1DVzhBNlFLYkN0YURaa1lMLUdDNHJZTw?oc=5" target="_blank">삼성 '선임 사외이사제' 전격 도입 - 한국경제</a><span class="src-tag">구글</span></li></ul></details>
     </div>
     <div class="card">
-        <div class="card-top">
-            <div class="name-row">
-                <h2>김병주</h2>
-                <span class="role">MBK파트너스</span>
-                <span class="count-badge">5건</span>
-            </div>
+        <div class="name-row">
+            <h2>김병주</h2>
+            <span class="role">MBK파트너스</span>
+            <span class="count-badge">5건</span>
         </div>
-        <div class="summary">• 홈플러스 사태 관련 검찰 수사 재시동 — 신영증권 관계자 조사 진행 중 (단독 보도)
-• 김병주 회장, "당국이 위법 행위 없다고 확인했다"고 공개 발언 → 여론 역풍 지속
-• MBK파트너스, 일본 알루미늄 캔 업계 3위 기업 인수 추진 (해외 딜 확장 행보)</div>
+        <div class="summary">• 홈플러스 사태 구속영장 기각 — 법원이 영장 청구 기각
+• 검찰, 수사 재시동 — 신영증권 관계자 조사 진행 중 (단독)
+• 미국에서 300억원대 초고가 별장 실소유 의혹 제기
+• 자택 담보로 홈플러스에 1,000억 단독 수혈한 사실 단독 보도 (긍정/부정 해석 엇갈림)
+• 총평: 구속 위기는 넘겼으나 수사 지속 + 재산 의혹 등 리스크 상존</div>
         <details><summary>원문 기사 보기 (5건)</summary><ul class="article-list"><li><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE8wZ3dFQXNFTndtZlRRRWxJby11Ujl1b2ZtOThVT2dGdlFGM0pUZU9TQnBucEJsSHpFMVFWSC1oeGk2VHlHRlYzNzVOV2VsTV80TnlScHFBZC1KMmVUZU9IUzZGUTlBeWUwWmtWTndR?oc=5" target="_blank">[짧은생각] 김병주 MBK파트너스 회장, 월급은 얼마일까? - 뉴스후플러스</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnU19KODU4UVl1LTBBVVNPQjY0M2IwdkFLOUFrdm5TWEhRYUJ6VHBxZzFqMVlqNU40UHc3UzFuRll4SVZiV0pmNTljbXYxWFk?oc=5" target="_blank">[단독] 검찰, ‘MBK 홈플러스 사건’ 수사 재시동…신영증권 관계자 조사[세상&] - v.daum.net</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hNlJxUklHOXpXWkhBNjVnYlBUWF84ekRvcFNnY2xCUXJTRzdnT1U0Y09HRGMtT2ZoUWNpeDBiLXRKeUl1OF83akRaejJHclNsTU9hTVJTQmsyaUhGNlYxLTNEeVBBZw?oc=5" target="_blank">김병주 MBK파트너스 회장, 美서 300억원대 초고가 별장 실소유 의혹 - 이로운넷</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNbFdrdXhaM003QUc2V2ZWUXdVOGZrbmgyaGNrZ01JNTU2cUF5dUhHenE0THY0Tm43OUgwNTJ0VEp5UkVVVHpYU0ljQU1zeldsdUNxeXNrN2pla251NG8wZlp0NVJGRVpheDNuREdXaTRjNTA5SkRvb21XUEZYdVRmcGNmUTczX0nSAZsBQVVfeXFMTUxEc3BMNWhlTy1QSWhlYndoS2JQMEtlZjdzNDdJVUZIam5HR2N5ZEdwOVA3Wldnek9hNjFiNkJJbWozQk8wZUctaFdpUzVGVGRlS3U0S3hGemRsQ0h4S3U5R1djd3hlZU14VmllNjBFRHphMFd2WEg3RWZuMlF6d2N1aXRSZjRDVG1GLTBNeHdseXkwMVBuZWpSeFE?oc=5" target="_blank">[단독] 김병주 회장의 ‘자택 담보’… MBK, 홈플러스에 홀로 1000억 수혈 - 조선비즈 - Chosunbiz</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE9VQkZ6aWdGbDl6dk4xdHgtQWtOaWFSU2NVOWV3NFhqWDhETkZ0YXdCTl9nb0g4V2dpOC1FNkxGb2oxdGdLT0UtZWJ1VFlpN3dWTTdYYXA0bkM0SWl4QzRQQmF4aXdqSGlnZTJhanVzRGs0Zw?oc=5" target="_blank">‘홈플러스 사태’ 김병주 MBK 회장 구속영장 기각 - 한겨레</a><span class="src-tag">구글</span></li></ul></details>
     </div>
     <div class="card">
-        <div class="card-top">
-            <div class="name-row">
-                <h2>서정진</h2>
-                <span class="role">셀트리온</span>
-                <span class="count-badge">5건</span>
-            </div>
+        <div class="name-row">
+            <h2>서정진</h2>
+            <span class="role">셀트리온</span>
+            <span class="count-badge">5건</span>
         </div>
-        <div class="summary">• 짐펜트라(크론병 치료제) 미국 처방 1분기 185% 급증, 분기 기준 최대 기록 달성
-• 프랑스 114년 역사 약국 체인 지프레(9,000개 약국) 인수 완료 — 유럽 유통망 대폭 강화
-• 다우존스 지속가능경영(ESG) 월드 지수 2년 연속 편입
-• 2세 경영 한계로 서정진 회장 직접 재등판, 형제경영 체제 강화 중
-• 혼외자 분쟁 및 친인척 계열사 편입 논란 지속 / 한국 부자 3위, 총자산 12조원</div>
+        <div class="summary">• 짐펜트라(크론병 치료제) 미국 시장 성장 궤도 진입 — 서정진의 뚝심 통했다는 평가
+• 프랑스 헬스케어 기업 인수 완료 — 현지 약국·병원 영업망 확보로 유럽 거점 마련
+• 다우존스 지속가능경영(DJSI) 월드 지수 2년 연속 편입 (ESG 우수 기업 인정)
+• 창업 공신 세대 교체 단행, 형제경영 체제 강화 움직임
+• 총평: 사업 성과와 글로벌 확장 긍정적, 오너 일가 지배구조 변화 주시</div>
         <details><summary>원문 기사 보기 (5건)</summary><ul class="article-list"><li><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zTVJPV3YtSEtyUnMwZXRjUTlVVWlvbERqUWUzWmY4dXJobnZwdGdnVmpoWjhDSDRrM0o4REdDb2o0RnViTTROeWswWHlVVmdqX2h5QjRtOE1QVkkyR2FKWg?oc=5" target="_blank">셀트리온, 다우존스 지속가능경영 월드 지수 2년 연속 편입 - 뉴스1</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQU3ZIaHFFNXNmREVWeHA1dzBEQmhnc2VxQ2hjSTc4Q2JWTlpRVjBwWkhubTdQdUNFNlpLWE5iWER4Z0NlZHVjclRlZnB2NEgtUDktSC1yR0tKTXNiZDNwc2hzdThWTnRXbC11YjdEZjF4dlRJVzViMkIyUGRvaTNKelFkOHN5anfSAZsBQVVfeXFMTmU1WGgwUExGc00zSmFnLVJmcWxFRzRfb1A0YlZndjZJcncwa0ZUZmtnR0psbUxLbk1fVFp6YkdQUFprVmEwMTFwME9VWkpvajFjeF96UHkwZm9OZ29xV0ZrMUdTZm9may1QZFdGYU4wRDBMRDRTck1ONnlld3lqaHA5WUNnT01mMzd2Q2syRXZ6RlRSWEZhQ3ZtRXc?oc=5" target="_blank">60代 창업 공신 떠나고 세대 교체...’형제경영’ 힘 실리는 셀트리온 - 조선비즈 - Chosunbiz</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xeEtaSkdsUlBybjJVdW41R040Mm91bUotcXZTWWROMVZBUEdJaGZmdjZsNDk4Zl9PSDdldHdHRXFNal80aDJZX18wdFN3N0dqN2ZB?oc=5" target="_blank">서정진의 뚝심 통했다…셀트리온 짐펜트라, 부진 씻고 '성장' 시동 - 네이트</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9SaGVjVnBYR3VmX3R0dFdwYXhMcWk3eXdycjlwcDlsaElZVnlUT3JUSExOQ29lMEdhdENjUnlKOVMxdS1SaUxOZDRYanJ6Zms4cm1mVmIwVjFfaTBGeUpJS1hfc29ySkZTTkZr?oc=5" target="_blank">서정진 셀트리온 회장의 야심작, ‘짐펜트라’ 미국서 성장 궤도 진입 - CEO스코어데일리</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5hTEZoUUpXMG4yRHNLSThabDh2dTFSb25LSHdOSXJGeDdMOFhMSzdvM0ZmVEZvQUNzVVpGWWppcWljbUVsTFFydnZLQzY5Q1JWRlBnN0RBQjNjbVBEWDhZSkhnQndJZnY1MXBQN2Jn?oc=5" target="_blank">셀트리온, 佛 헬스케어 기업 인수…현지 약국·병원 영업망 확보했다 - 중소기업신문</a><span class="src-tag">구글</span></li></ul></details>
     </div>
     <div class="card">
-        <div class="card-top">
-            <div class="name-row">
-                <h2>정정이</h2>
-                <span class="role">현대해상</span>
-                <span class="count-badge">5건</span>
-            </div>
+        <div class="name-row">
+            <h2>정정이</h2>
+            <span class="role">현대해상</span>
+            <span class="count-badge">5건</span>
         </div>
-        <div class="summary">• 정몽윤 현대해상 회장의 장녀로, 현대하임자산운용 대표직 연임 확정 (단독 보도)
-• 그룹 내 경영 승계 구도에서 자산운용 부문 입지를 안정적으로 유지</div>
+        <div class="summary">• 현대하임자산운용 대표직 연임 확정 (단독 보도) — 자산운용 부문 경영 입지 공고화
+• 현대하임, 예술인센터 인수 추진 중으로 사업 다각화 행보
+• 부친 정몽윤 회장 지분 추가 매입으로 현대해상 지분율 23.97%로 상승
+• 남매 정경선 부사장은 실적 반토막 논란으로 별도 이슈 존재 (정정이 본인과 무관)</div>
         <details><summary>원문 기사 보기 (5건)</summary><ul class="article-list"><li><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE91cXhlMEJkMkh5SndaU1U5UHhGa0s4eU1CbUtSY2VpbWM5Y2hDeEpUMVVfak16OGszOEdYU0JjekJvQllnLXBKdzhwU3QtSkQtdmNVdGlB?oc=5" target="_blank">[단독] 정몽윤 현대해상 회장 장녀 정정이, 현대하임자산운용 대표 연임 - 비즈한국</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VdXVPeExfSkMxajhGSW5WMU5zelhvX0dLUnF5ZkU5NEhDV0pKeVJxQXBfWUxkbWhCQlI5YklEa1FFMk9FaDk3YTBKaThUZU0?oc=5" target="_blank">[보험가 차세대 오너 포커스] ESG로 존재감 키운 정경선 현대해상 부사장, 다음은 실적 - 딜사이트</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMisAJBVV95cUxQSE04WUx6MXZ6dnlhOGNRaWpiVk82VTB5Y2RCV2RRVmJpRmkwMzlUVzhFWXpPNng5U3YxLUFiTE84dWItME5pQlBMRTkxUnBNRG0tb0YxMDdXQk5tQ2o4emthQ2V0YlNEd2JIUXAxSkN6RHpXbFVXeWdRSVJNU1VEV0VxY1M3Q2lrYV8tVHoxeUpYbE9zMWZ3X2V2UklmdE94azBETkdCQjd6d2o4ZzJFQjBrR3lKVjFPa2EyMDFiYUQ2b1hyMnhhbXg2bV8xU2h6c0dTblMzckkybjdWTHNVa3RZT3BJZzhlR1lpdThrQi1WRWkyY083bm5kOEI1Ykx1ZFUwYVdMMURTRDhWb1BiV1BzbUZ1VkxBMEVyTWl4eVNFREhHa1g3NTdlVXJPc0xw?oc=5" target="_blank">현대해상 정경선 부사장 ‘체인지메이커’의 굴욕…이상은 ‘혁신’, 현실은 ‘실적 반토막’ - 뉴스필드</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9TdXlzamhvMk9BZ2lIcldoWFYxQTl5djZQRlFVSDBXRU5FdmxLQlBYM1JFTnlUTks5RUZUcUFUX2MyRkNtNmNKazhkYWY3U2dERHNTSHZ0cHVSMExVR29yTW9GcTcwMkNRcm9F?oc=5" target="_blank">현대하임의 예술인센터 인수에 쏠린 눈 [이슈 더보기] - 뉴스저널리즘</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9CMkp0REdoeEZ5U2F2ODVzSVBRdV9HYVpGLWxfdW5YYmtaRjhTVmVtSUFBRldSWUI4bUhRZTlEMGJKcnVvSUlDMmRRdDBxM3dLZVFFbkRPLUxqekhEWFY2WG9wdS1GVWlnWDFGenR6cUhmbEU?oc=5" target="_blank">현대해상 최대주주 정몽윤, 현대해상 주식등의 수 1만3726주 증가…총 지분율 23.97% - 디지털투데이</a><span class="src-tag">구글</span></li></ul></details>
     </div>
     <div class="card">
-        <div class="card-top">
-            <div class="name-row">
-                <h2>송창현</h2>
-                <span class="role">42dot</span>
-                <span class="count-badge">5건</span>
-            </div>
+        <div class="name-row">
+            <h2>송창현</h2>
+            <span class="role">42dot</span>
+            <span class="count-badge">5건</span>
         </div>
-        <div class="summary">• 오늘 특이사항 없음</div>
+        <div class="summary">• 현대차 자율주행 사령탑·42dot 사장 전격 사임
+• 수천억원 규모 보상 수령 후 퇴진, 후임자 물색 난항 예상
+• '성과 없고 불만만' — 42dot이 현대차 자율주행 발목 잡았다는 비판적 평가 다수
+• 총평: 현대차 SDV 독자 노선 사실상 폐기 수순, 자율주행 전략 전면 재검토 예상</div>
         <details><summary>원문 기사 보기 (5건)</summary><ul class="article-list"><li><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOdnVmclkwYVR3RUh4NG9BWmYtWElCc3BvRTJycEZ6QnVKeEF5amNKZS12MlVuZHlzdzBaZ2syckhIYm5VMTg1bFYxQVF3TmxHOUFKUjZ0a2ZnVHkzdGdpNHNTZ0FNU3dzQ2VFMFFpRlR6clN6S205WDhmREhwY1RtTWxEMA?oc=5" target="_blank">수천억 손에 쥔 송창현 사장의 퇴진…현대차, 답없는 자율주행에 수업료만 수조원 - 인베스트조선</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nWnNfRURCQVhBcU00Ujl3a2hzZWRwTXRReV9UN2tEMDYtVkd1SHMyRzlpYnV6cENUa0dDdFhWcUxibXhHMWpwY29oT1J0cmtiSWVUbG1rX3pWOEpLZ19ISTFlSHFtUQ?oc=5" target="_blank">현대차 자율주행 수장 송창현 사임...'카메라'만 남기고 떠났다 - 디일렉</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FNENvODg3eXBsbVduTUdkQTdmLU4yTkxoZ0s0N0N3SnVOUTdrUjlpYXlETXplai1jUW9pQkdtZzdxQi1rUjBDWHNZamN3c2pvempDZ2kwanBsbFhkVWZuVmdvUFRPNVVZ?oc=5" target="_blank">“성과는 없고 불만만”… 포티투닷이 현대차 발목 잡나 - 녹색경제신문</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HaDRVbnhpck5kSnNLX3lpZ0pMTXRUR1dQcVUzN0xMa29sUXZlR0pUSV9YelNPVlpBdVA4UjdNYzN5a3NhcFN2UllBTUw1SmM?oc=5" target="_blank">현대차 SDV 사령탑 송창현 사장 사임…'독자 노선' 폐기 수순 - v.daum.net</a><span class="src-tag">구글</span></li><li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1LR1N4UGRVZUd4dmRKQUFuS0pnc05jdHhEaDJtZkh6VlFwQVpQbXFITGxaWTFoR0FmYlB4Q1pYT0VfUEtXMVNJa1Z4MHhSdWs?oc=5" target="_blank">'전권' 행사한 송창현…후임자 물색 '난항' 예상 - 딜사이트</a><span class="src-tag">구글</span></li></ul></details>
     </div>
 </div>
