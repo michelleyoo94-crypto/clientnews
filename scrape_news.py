@@ -8,7 +8,7 @@ from playwright.async_api import async_playwright
 # (이름, 특징, 검색쿼리)
 PEOPLE = [
     ("이하늬",  "배우",               "이하늬 배우"),
-    ("이혜영",  "탤런트",             "이혜영 이상민"),
+    ("이혜영",  "탤런트",             "이혜영"),
     ("권오경",  "한양대교수 SDI사외이사", "권오경 한양대교수"),
     ("김병주",  "MBK파트너스",        "김병주 MBK파트너스"),
     ("서정진",  "셀트리온",           "서정진 셀트리온"),
@@ -227,6 +227,27 @@ def e(s):
 
 
 def save_html(all_results: list[dict], out_path: str):
+    import json as _json
+    from pathlib import Path as _Path
+
+    KEYS_FILE = _Path(out_path).parent / "last_run_keys.json"
+
+    # 이전 실행 기사 키 로드
+    prev_keys: set = set()
+    if KEYS_FILE.exists():
+        try:
+            prev_keys = set(_json.loads(KEYS_FILE.read_text(encoding="utf-8")))
+        except:
+            pass
+
+    # 현재 기사 키 집합
+    cur_keys = {r["title"][:40] for r in all_results}
+
+    # 신규 기사 키
+    new_keys = cur_keys - prev_keys
+    new_count = sum(1 for r in all_results if r["title"][:40] in new_keys)
+    updated_at = TODAY.strftime("%Y.%m.%d %H:%M")
+
     # 사람별 정렬된 데이터 준비
     people_data = []
     for name, desc, *_ in PEOPLE:
@@ -244,11 +265,13 @@ def save_html(all_results: list[dict], out_path: str):
             groups.setdefault(d, []).append(item)
         return sorted(groups.items(), reverse=True)
 
-    # 탭 버튼 생성
+    # 탭 버튼 생성 (신규 있으면 탭에 NEW 표시)
     tabs_html = ""
     for i, (name, desc, items) in enumerate(people_data):
         active = "active" if i == 0 else ""
-        tabs_html += f'<button class="tab-btn {active}" onclick="showTab({i})">{e(name)} <span class="count">{len(items)}</span></button>\n'
+        has_new = any(r["title"][:40] in new_keys for r in items)
+        new_dot = ' <span class="new-dot"></span>' if has_new else ""
+        tabs_html += f'<button class="tab-btn {active}" onclick="showTab({i})">{e(name)}{new_dot} <span class="count">{len(items)}</span></button>\n'
 
     # 각 인물 패널 생성
     panels_html = ""
@@ -260,11 +283,14 @@ def save_html(all_results: list[dict], out_path: str):
         for date, date_items in date_groups:
             cards_html = ""
             for item in date_items:
+                is_new = item["title"][:40] in new_keys
+                new_badge = '<span class="new-badge">NEW</span>' if is_new else ""
+                card_cls = "card new-card" if is_new else "card"
                 summary_html = f'<p class="summary">{e(item["summary"])}</p>' if item.get("summary") else ""
                 press_html = f'<span class="press">{e(item["press"])}</span>' if item.get("press") else ""
                 cards_html += f"""
-        <div class="card">
-          <div class="card-meta">{press_html}</div>
+        <div class="{card_cls}">
+          <div class="card-meta">{press_html}{new_badge}</div>
           <a class="card-title" href="{e(item['href'])}" target="_blank" rel="noopener">{e(item['title'])}</a>
           {summary_html}
         </div>"""
@@ -286,6 +312,9 @@ def save_html(all_results: list[dict], out_path: str):
       </div>
       {empty}{dates_html}
     </div>"""
+
+    # 현재 키 저장 (다음 실행 시 비교용)
+    KEYS_FILE.write_text(_json.dumps(list(cur_keys), ensure_ascii=False), encoding="utf-8")
 
     html = f"""<!DOCTYPE html>
 <html lang="ko">
@@ -309,6 +338,7 @@ def save_html(all_results: list[dict], out_path: str):
   }}
   header h1 {{ font-size: 18px; font-weight: 700; color: #191F28; }}
   header p {{ font-size: 13px; color: #8B95A1; margin-top: 2px; }}
+  header .new-info {{ font-size: 12px; color: #00B386; font-weight: 600; margin-top: 4px; }}
 
   .tabs {{
     background: #fff;
@@ -331,6 +361,19 @@ def save_html(all_results: list[dict], out_path: str):
     padding: 1px 6px; border-radius: 10px; margin-left: 4px;
   }}
   .tab-btn.active .count {{ background: #EBF3FF; color: #3182F6; }}
+  .new-dot {{
+    display: inline-block; width: 6px; height: 6px;
+    background: #00B386; border-radius: 50%; margin-left: 2px; vertical-align: middle;
+  }}
+  .new-badge {{
+    display: inline-block; background: #E6FBF4; color: #00B386;
+    font-size: 10px; font-weight: 700; padding: 1px 7px;
+    border-radius: 10px; margin-left: 6px; vertical-align: middle;
+  }}
+  .new-card {{
+    background: #F5FFFB;
+    border-color: #B3EDD9;
+  }}
 
   .content {{ max-width: 860px; margin: 0 auto; padding: 32px 24px; }}
 
@@ -386,7 +429,8 @@ def save_html(all_results: list[dict], out_path: str):
 <body>
 <header>
   <h1>고객 뉴스 모니터링</h1>
-  <p>2026년 · 네이버 뉴스 기준 · 생성일 {TODAY.strftime('%Y.%m.%d')}</p>
+  <p>2026년 · 네이버 뉴스 기준 · 업데이트 {updated_at}</p>
+  {f'<p class="new-info">✦ 이번 업데이트 신규 {new_count}건</p>' if new_count else ''}
 </header>
 <div class="tabs">
 {tabs_html}</div>
