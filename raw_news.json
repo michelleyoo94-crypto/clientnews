@@ -1,12 +1,43 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13 07:22",
+  "generated_at": "2026-05-13 16:45",
   "people": [
     {
       "name": "이하늬",
       "description": "배우",
       "sources": {
-        "google_news": [],
+        "google_news": [
+          {
+            "title": "'애마' 방효린, 여자 신인 연기상 \"이하늬 통해 훌륭한 배우 무엇인지 배워\" [백상예술대상] - v.daum.net",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBud3ZBbmN2bndZTjVCbTcxNzNxRTdJeklVMFVETlRDVnRqOWl5XzZFUnVzeVlvU2RwbTRQMHFWQlNkWS0yYmlCNldoLU9LM2c?oc=5",
+            "published": "Fri, 08 May 2026 11:26:17 GMT",
+            "summary": "'애마' 방효린, 여자 신인 연기상 \"이하늬 통해 훌륭한 배우 무엇인지 배워\" [백상예술대상]  v.daum.net"
+          },
+          {
+            "title": "‘미등록 기획사 운영 혐의’ 배우 이하늬, 남편도 검찰 송치 - 조선비즈 - Chosunbiz",
+            "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPU0E1azNPLVZwT3Fydm04cDZuWF80OHN4ampCam8wSU5PYnE1RnpQSjI2SDNJXzRuOTNJR0hRRGxLTmZyemdiVEk5U1h1d0ViVi1SWWdyN2pqdVZxeXluZUY4cGdlVjhwX0VYVEllVDZJTDNxVEd3czJ5Z0R6cmJRejBrYldPdmpVRElYLWN4VFZPdjTSAacBQVVfeXFMTlJmYVJMWmU0ZFp5MVM3ZkdybjZBV1NwTFR0T2RfeFRBcGl6OGdGSHVaNTVKMW5HRl85dGh3ZUw5R1BPNzBiR3RGZjhadFFCUTdyV1RTWG5ITjRzUDMtd0xFejd4OGF0bEVEZHluRktzYmFHSjFnMWREaVVVR2tNUmtvTlZoMS1XOXE2Ri1SS05aVmZXd0twVHBISHJNSGZfNzVWd2ZFekk?oc=5",
+            "published": "Wed, 24 Dec 2025 08:00:00 GMT",
+            "summary": "‘미등록 기획사 운영 혐의’ 배우 이하늬, 남편도 검찰 송치 - 조선비즈  Chosunbiz"
+          },
+          {
+            "title": "'애마' 방효린, 신인상 수상 영광 이하늬에게로…\"훌륭한 배우 배워\" [62회 백상예술대상] - osen.co.kr",
+            "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yWTZfMlRXOWpkeHNkNVRzdVdKSGgwVUhzNldsLUhBZFVEdG9XRjAwVTlGMHZmeHBlZWl6c3JRcUV5UjRPSk1XOXFsYk9SOUZTdUlF?oc=5",
+            "published": "Fri, 08 May 2026 11:11:00 GMT",
+            "summary": "'애마' 방효린, 신인상 수상 영광 이하늬에게로…\"훌륭한 배우 배워\" [62회 백상예술대상]  osen.co.kr"
+          },
+          {
+            "title": "'애마' 방효린, 신인상 수상 영광 이하늬에게로…\"훌륭한 배우 배워\" [62회 백상예술대상] - 네이트",
+            "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SNUFLSmVZZS1udVI1QUtlaVNCd1hkd3VDMUhkOXlXNlVfQzVIMUtVdGtBU2g4dndYSG9yZjh4czIwbkMxeUhpT0Ffb2MzTFI3OHJmWXBnVERTRUpUU1hGMA?oc=5",
+            "published": "Fri, 08 May 2026 11:12:00 GMT",
+            "summary": "'애마' 방효린, 신인상 수상 영광 이하늬에게로…\"훌륭한 배우 배워\" [62회 백상예술대상]  네이트"
+          },
+          {
+            "title": "경찰, '미등록 기획사 운영' 배우 이하늬 검찰에 송치 - 연합뉴스",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBkanZYN2FfRU9zNnlNbWJSR2RwTjFzcmNXTVRONTRRcVBVWG9rXzI3dlh4cnM4V05QZmpTc3hrbHliT010VGcyR0hxV3hHQlNtZGVjandFVmlDYVnSAWBBVV95cUxOQlhrczBEZjlZYjljYjVPaWs5eEVMQkRjOUNWTnZ5Z1RDellzbXI1d1pLd0ZxbFNlYU9jMVFBVURacHNPMWJObEprakxPNlNEZzJWV2owT1l2al9KU19XTDg?oc=5",
+            "published": "Wed, 24 Dec 2025 08:00:00 GMT",
+            "summary": "경찰, '미등록 기획사 운영' 배우 이하늬 검찰에 송치  연합뉴스"
+          }
+        ],
         "naver_news": [],
         "dcinside": []
       }
@@ -15,7 +46,38 @@
       "name": "이혜영",
       "description": "인플루언서",
       "sources": {
-        "google_news": [],
+        "google_news": [
+          {
+            "title": "접대 받고 인플루언서 사건 덮었나…檢, 현직 경찰관에 구속영장 - v.daum.net",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE84SW05c1VXZ1RRM0wtOGhTSlRIblgyUDZ2U3drNERXc2NzMms0clo5WHQ0Vnl6YVdyY1RHejhadFlDOUQtY1dQTmZRcGx5dE0?oc=5",
+            "published": "Mon, 20 Apr 2026 07:00:00 GMT",
+            "summary": "접대 받고 인플루언서 사건 덮었나…檢, 현직 경찰관에 구속영장  v.daum.net"
+          },
+          {
+            "title": "‘사기·향응’ 의혹 인플루언서 양정원씨 소환…“남편의 경찰 접촉 몰랐다” - v.daum.net",
+            "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9meXpnb2YtZXRyUmZYbFFhejNzUzRJcDVnNVpxN241aUg2aDROX1M0WVMzamtEVGpBbGJKYTlfTWs0ejg0S2c?oc=5",
+            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
+            "summary": "‘사기·향응’ 의혹 인플루언서 양정원씨 소환…“남편의 경찰 접촉 몰랐다”  v.daum.net"
+          },
+          {
+            "title": "이혜영, 결혼 14주년 자축 ♥남편 얼굴 공개부터 뽀뽀까지 “지브리풍 케이크 영상 눈길” : 네이버 블로그 - Naver Blog",
+            "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE01LWNHQjIyVjhreDdiaWtQanViNzNFdEtfYVNaRFVmRGRLU0tmb2ZkMHZTckpaWk9QdVlQaUctSGRtSFVNczJTMGE1NVNZZ2Ezc25DTWdUMmRteVladHZLOWowTHpRcHJB?oc=5",
+            "published": "Sun, 20 Jul 2025 07:00:00 GMT",
+            "summary": "이혜영, 결혼 14주년 자축 ♥남편 얼굴 공개부터 뽀뽀까지 “지브리풍 케이크 영상 눈길” : 네이버 블로그  Naver Blog"
+          },
+          {
+            "title": "산수 지적 정현규, 막말 논란 후 두 달 만에 SNS 재개[NOW★이슈] - 스포츠한국",
+            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wb0ZPV3NZTjZvOU1kekZMemtheEczSU5MTmlQWVp4bzQ5Z0tYQ2ZoLXlKcHpMU3hNMG9JcnN4U0xBLTBIQlIxbmhDU05RRmx1M3EzQlExbTlrNXVJQ1h6Q3p5MTE0X1FTcjI3a1NfN2PSAXRBVV95cUxOTy04RlpWN3ZMY0l3ZnRzX2loc083dDRhY1hiRmIyX0xoN0ktbVZmenZmZHR1ZDJnVjg4eWlDMy1NbUQ4X1BWYmhVb0hQRlIwZzNqQmZZTTQ4MUZpeElKVXM4RmwzMUJUSllSR1lkYnJRcFlXdA?oc=5",
+            "published": "Sat, 19 Jul 2025 07:00:00 GMT",
+            "summary": "산수 지적 정현규, 막말 논란 후 두 달 만에 SNS 재개[NOW★이슈]  스포츠한국"
+          },
+          {
+            "title": "\"이 바닥에 얼씬도 하지 마\"…이혜영·탁재훈 무슨 일? - newsis.com",
+            "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vd0NlbDZFN2lNSDExUGgtTGZqSjRiOEhGUUlrS3V5ODZMX3BGMUlBVnZ4dkNiRHJ5VTZjWE5qYmM0Q1hVUk9vNlA4MmdBdGwtMkRFbnBOeWw5cE9JRTlUTtIBeEFVX3lxTE5DTDRPdTMtaWhHa2c3TFlWc2w4X09RUDFKQ3NQYXFQQmhxbkpUMTBqZUdDNDZYUkZwMlVTNWNrT1EzUEtRcTNBV2RWSDZXYzE2amo5SEZ5NE4xd2JqTnNzc0xxbjVFbEN6LVY1X2FweFVUckhCMzg0UA?oc=5",
+            "published": "Fri, 08 Nov 2024 08:00:00 GMT",
+            "summary": "\"이 바닥에 얼씬도 하지 마\"…이혜영·탁재훈 무슨 일?  newsis.com"
+          }
+        ],
         "naver_news": [],
         "dcinside": []
       }
@@ -24,7 +86,38 @@
       "name": "권오경",
       "description": "한양대교수 SDI사외이사",
       "sources": {
-        "google_news": [],
+        "google_news": [
+          {
+            "title": "권오경 융합전자공학부 교수, 'CES 2024' 참석 - 뉴스H",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1vUXF3MXhYZ0loeDdta2hKT0ZwUnd1YVA3eFFKTXhMeVpkcmZ5VGU2X0p4d0FzNWtQcmV0UjFJMWt3eUhtenU5STdoemhCSFVhVzNtUTgtNko4LXRRZnpnVTZXTnozU190bnZr?oc=5",
+            "published": "Wed, 27 Dec 2023 08:00:00 GMT",
+            "summary": "권오경 융합전자공학부 교수, 'CES 2024' 참석  뉴스H"
+          },
+          {
+            "title": "[사외이사] 삼성SDI, 이사회 유일 '반대' 표명 박태주 재선임 탈락...이미경 신규 선임 - 더밸류뉴스",
+            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BbFZiUTJBSzRTM05nZFp6YldEdzIwaW9ZZW5jOU1rQ1g3Wkg5MFdZcnZURUJZeGV3d0pVUnJGc052b3N5MUhhcUxoaUU1X1JfR1dtbg?oc=5",
+            "published": "Sun, 26 Mar 2023 07:00:00 GMT",
+            "summary": "[사외이사] 삼성SDI, 이사회 유일 '반대' 표명 박태주 재선임 탈락...이미경 신규 선임  더밸류뉴스"
+          },
+          {
+            "title": "삼성SDI 사외이사 권오경 김덕현 박태주 최원욱으로 다 교체 - 비즈니스포스트",
+            "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kNU9kMlpKU2NPOG02UVNyQVV0a1p4NFIxZzNUNXRuME5UWmp2M1Fvc2t3RUxTSTV6U1MxSkF2aVdXRnUwTmprSlNDS3ZYOHhDdzM2X09oR1U5U2hlRk5TYkNUbTBibXFHZmxpM1E1RHE1UVE?oc=5",
+            "published": "Mon, 24 Feb 2020 08:00:00 GMT",
+            "summary": "삼성SDI 사외이사 권오경 김덕현 박태주 최원욱으로 다 교체  비즈니스포스트"
+          },
+          {
+            "title": "삼성SDI·삼성SDS, ‘선임 사외이사’ 제도 도입 - 한겨레",
+            "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE94MzU2cTk2V0dWM2F0akttcXFTS3QzZTlBRHhfXzBDbGVYUHRZYUlxc3cycS1Rc2RRZmhQaFFiOHI3SXZxckZBa2VhRVlnWXBEcjExNWJLcHFFeFJOUDl2Qk9jNDU2dUQwdWc?oc=5",
+            "published": "Thu, 26 Oct 2023 07:00:00 GMT",
+            "summary": "삼성SDI·삼성SDS, ‘선임 사외이사’ 제도 도입  한겨레"
+          },
+          {
+            "title": "삼성 '선임 사외이사제' 전격 도입 - 한국경제",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE55QXladjk2YmhXZFN4VGdfWDBIcmlJRkdxMWJBNThCUDJPLUkxbzZVVEpxam5zek5fUDkzVzJ0eWNVT0Frc1Zhd3dRLXF1MzdLOW5qbHJKYjA1UdIBVEFVX3lxTE1hUEVDNDFkVFhpUmNNeXFYOUhUZEZEYVJVU0p3SU1EXzc0Q210cHh4RDZNcDFnYjFFYU9WUU1DVzhBNlFLYkN0YURaa1lMLUdDNHJZTw?oc=5",
+            "published": "Thu, 26 Oct 2023 07:00:00 GMT",
+            "summary": "삼성 '선임 사외이사제' 전격 도입  한국경제"
+          }
+        ],
         "naver_news": [],
         "dcinside": []
       }
@@ -33,7 +126,38 @@
       "name": "김병주",
       "description": "MBK파트너스",
       "sources": {
-        "google_news": [],
+        "google_news": [
+          {
+            "title": "[짧은생각] 김병주 MBK파트너스 회장, 월급은 얼마일까? - 뉴스후플러스",
+            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wZ3dFQXNFTndtZlRRRWxJby11Ujl1b2ZtOThVT2dGdlFGM0pUZU9TQnBucEJsSHpFMVFWSC1oeGk2VHlHRlYzNzVOV2VsTV80TnlScHFBZC1KMmVUZU9IUzZGUTlBeWUwWmtWTndR?oc=5",
+            "published": "Mon, 11 May 2026 15:00:00 GMT",
+            "summary": "[짧은생각] 김병주 MBK파트너스 회장, 월급은 얼마일까?  뉴스후플러스"
+          },
+          {
+            "title": "[단독] 검찰, ‘MBK 홈플러스 사건’ 수사 재시동…신영증권 관계자 조사[세상&] - v.daum.net",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnU19KODU4UVl1LTBBVVNPQjY0M2IwdkFLOUFrdm5TWEhRYUJ6VHBxZzFqMVlqNU40UHc3UzFuRll4SVZiV0pmNTljbXYxWFk?oc=5",
+            "published": "Wed, 13 May 2026 05:38:21 GMT",
+            "summary": "[단독] 검찰, ‘MBK 홈플러스 사건’ 수사 재시동…신영증권 관계자 조사[세상&]  v.daum.net"
+          },
+          {
+            "title": "김병주 MBK파트너스 회장, 美서 300억원대 초고가 별장 실소유 의혹 - 이로운넷",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hNlJxUklHOXpXWkhBNjVnYlBUWF84ekRvcFNnY2xCUXJTRzdnT1U0Y09HRGMtT2ZoUWNpeDBiLXRKeUl1OF83akRaejJHclNsTU9hTVJTQmsyaUhGNlYxLTNEeVBBZw?oc=5",
+            "published": "Fri, 21 Nov 2025 08:00:00 GMT",
+            "summary": "김병주 MBK파트너스 회장, 美서 300억원대 초고가 별장 실소유 의혹  이로운넷"
+          },
+          {
+            "title": "[단독] 김병주 회장의 ‘자택 담보’… MBK, 홈플러스에 홀로 1000억 수혈 - 조선비즈 - Chosunbiz",
+            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbFdrdXhaM003QUc2V2ZWUXdVOGZrbmgyaGNrZ01JNTU2cUF5dUhHenE0THY0Tm43OUgwNTJ0VEp5UkVVVHpYU0ljQU1zeldsdUNxeXNrN2pla251NG8wZlp0NVJGRVpheDNuREdXaTRjNTA5SkRvb21XUEZYdVRmcGNmUTczX0nSAZsBQVVfeXFMTUxEc3BMNWhlTy1QSWhlYndoS2JQMEtlZjdzNDdJVUZIam5HR2N5ZEdwOVA3Wldnek9hNjFiNkJJbWozQk8wZUctaFdpUzVGVGRlS3U0S3hGemRsQ0h4S3U5R1djd3hlZU14VmllNjBFRHphMFd2WEg3RWZuMlF6d2N1aXRSZjRDVG1GLTBNeHdseXkwMVBuZWpSeFE?oc=5",
+            "published": "Sun, 01 Mar 2026 08:00:00 GMT",
+            "summary": "[단독] 김병주 회장의 ‘자택 담보’… MBK, 홈플러스에 홀로 1000억 수혈 - 조선비즈  Chosunbiz"
+          },
+          {
+            "title": "‘홈플러스 사태’ 김병주 MBK 회장 구속영장 기각 - 한겨레",
+            "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9VQkZ6aWdGbDl6dk4xdHgtQWtOaWFSU2NVOWV3NFhqWDhETkZ0YXdCTl9nb0g4V2dpOC1FNkxGb2oxdGdLT0UtZWJ1VFlpN3dWTTdYYXA0bkM0SWl4QzRQQmF4aXdqSGlnZTJhanVzRGs0Zw?oc=5",
+            "published": "Wed, 14 Jan 2026 08:00:00 GMT",
+            "summary": "‘홈플러스 사태’ 김병주 MBK 회장 구속영장 기각  한겨레"
+          }
+        ],
         "naver_news": [],
         "dcinside": []
       }
@@ -42,7 +166,38 @@
       "name": "서정진",
       "description": "셀트리온",
       "sources": {
-        "google_news": [],
+        "google_news": [
+          {
+            "title": "셀트리온, 다우존스 지속가능경영 월드 지수 2년 연속 편입 - 뉴스1",
+            "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zTVJPV3YtSEtyUnMwZXRjUTlVVWlvbERqUWUzWmY4dXJobnZwdGdnVmpoWjhDSDRrM0o4REdDb2o0RnViTTROeWswWHlVVmdqX2h5QjRtOE1QVkkyR2FKWg?oc=5",
+            "published": "Wed, 13 May 2026 01:17:48 GMT",
+            "summary": "셀트리온, 다우존스 지속가능경영 월드 지수 2년 연속 편입  뉴스1"
+          },
+          {
+            "title": "60代 창업 공신 떠나고 세대 교체...’형제경영’ 힘 실리는 셀트리온 - 조선비즈 - Chosunbiz",
+            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQU3ZIaHFFNXNmREVWeHA1dzBEQmhnc2VxQ2hjSTc4Q2JWTlpRVjBwWkhubTdQdUNFNlpLWE5iWER4Z0NlZHVjclRlZnB2NEgtUDktSC1yR0tKTXNiZDNwc2hzdThWTnRXbC11YjdEZjF4dlRJVzViMkIyUGRvaTNKelFkOHN5anfSAZsBQVVfeXFMTmU1WGgwUExGc00zSmFnLVJmcWxFRzRfb1A0YlZndjZJcncwa0ZUZmtnR0psbUxLbk1fVFp6YkdQUFprVmEwMTFwME9VWkpvajFjeF96UHkwZm9OZ29xV0ZrMUdTZm9may1QZFdGYU4wRDBMRDRTck1ONnlld3lqaHA5WUNnT01mMzd2Q2syRXZ6RlRSWEZhQ3ZtRXc?oc=5",
+            "published": "Tue, 12 May 2026 21:00:00 GMT",
+            "summary": "60代 창업 공신 떠나고 세대 교체...’형제경영’ 힘 실리는 셀트리온 - 조선비즈  Chosunbiz"
+          },
+          {
+            "title": "서정진의 뚝심 통했다…셀트리온 짐펜트라, 부진 씻고 '성장' 시동 - 네이트",
+            "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xeEtaSkdsUlBybjJVdW41R040Mm91bUotcXZTWWROMVZBUEdJaGZmdjZsNDk4Zl9PSDdldHdHRXFNal80aDJZX18wdFN3N0dqN2ZB?oc=5",
+            "published": "Wed, 13 May 2026 06:38:00 GMT",
+            "summary": "서정진의 뚝심 통했다…셀트리온 짐펜트라, 부진 씻고 '성장' 시동  네이트"
+          },
+          {
+            "title": "서정진 셀트리온 회장의 야심작, ‘짐펜트라’ 미국서 성장 궤도 진입 - CEO스코어데일리",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9SaGVjVnBYR3VmX3R0dFdwYXhMcWk3eXdycjlwcDlsaElZVnlUT3JUSExOQ29lMEdhdENjUnlKOVMxdS1SaUxOZDRYanJ6Zms4cm1mVmIwVjFfaTBGeUpJS1hfc29ySkZTTkZr?oc=5",
+            "published": "Sun, 10 May 2026 22:00:00 GMT",
+            "summary": "서정진 셀트리온 회장의 야심작, ‘짐펜트라’ 미국서 성장 궤도 진입  CEO스코어데일리"
+          },
+          {
+            "title": "셀트리온, 佛 헬스케어 기업 인수…현지 약국·병원 영업망 확보했다 - 중소기업신문",
+            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hTEZoUUpXMG4yRHNLSThabDh2dTFSb25LSHdOSXJGeDdMOFhMSzdvM0ZmVEZvQUNzVVpGWWppcWljbUVsTFFydnZLQzY5Q1JWRlBnN0RBQjNjbVBEWDhZSkhnQndJZnY1MXBQN2Jn?oc=5",
+            "published": "Tue, 12 May 2026 04:42:38 GMT",
+            "summary": "셀트리온, 佛 헬스케어 기업 인수…현지 약국·병원 영업망 확보했다  중소기업신문"
+          }
+        ],
         "naver_news": [],
         "dcinside": []
       }
@@ -51,7 +206,38 @@
       "name": "정정이",
       "description": "현대해상",
       "sources": {
-        "google_news": [],
+        "google_news": [
+          {
+            "title": "[단독] 정몽윤 현대해상 회장 장녀 정정이, 현대하임자산운용 대표 연임 - 비즈한국",
+            "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE91cXhlMEJkMkh5SndaU1U5UHhGa0s4eU1CbUtSY2VpbWM5Y2hDeEpUMVVfak16OGszOEdYU0JjekJvQllnLXBKdzhwU3QtSkQtdmNVdGlB?oc=5",
+            "published": "Tue, 14 Apr 2026 07:00:00 GMT",
+            "summary": "[단독] 정몽윤 현대해상 회장 장녀 정정이, 현대하임자산운용 대표 연임  비즈한국"
+          },
+          {
+            "title": "[보험가 차세대 오너 포커스] ESG로 존재감 키운 정경선 현대해상 부사장, 다음은 실적 - 딜사이트",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VdXVPeExfSkMxajhGSW5WMU5zelhvX0dLUnF5ZkU5NEhDV0pKeVJxQXBfWUxkbWhCQlI5YklEa1FFMk9FaDk3YTBKaThUZU0?oc=5",
+            "published": "Fri, 09 Jan 2026 08:00:00 GMT",
+            "summary": "[보험가 차세대 오너 포커스] ESG로 존재감 키운 정경선 현대해상 부사장, 다음은 실적  딜사이트"
+          },
+          {
+            "title": "현대해상 정경선 부사장 ‘체인지메이커’의 굴욕…이상은 ‘혁신’, 현실은 ‘실적 반토막’ - 뉴스필드",
+            "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQSE04WUx6MXZ6dnlhOGNRaWpiVk82VTB5Y2RCV2RRVmJpRmkwMzlUVzhFWXpPNng5U3YxLUFiTE84dWItME5pQlBMRTkxUnBNRG0tb0YxMDdXQk5tQ2o4emthQ2V0YlNEd2JIUXAxSkN6RHpXbFVXeWdRSVJNU1VEV0VxY1M3Q2lrYV8tVHoxeUpYbE9zMWZ3X2V2UklmdE94azBETkdCQjd6d2o4ZzJFQjBrR3lKVjFPa2EyMDFiYUQ2b1hyMnhhbXg2bV8xU2h6c0dTblMzckkybjdWTHNVa3RZT3BJZzhlR1lpdThrQi1WRWkyY083bm5kOEI1Ykx1ZFUwYVdMMURTRDhWb1BiV1BzbUZ1VkxBMEVyTWl4eVNFREhHa1g3NTdlVXJPc0xw?oc=5",
+            "published": "Fri, 20 Feb 2026 08:00:00 GMT",
+            "summary": "현대해상 정경선 부사장 ‘체인지메이커’의 굴욕…이상은 ‘혁신’, 현실은 ‘실적 반토막’  뉴스필드"
+          },
+          {
+            "title": "현대하임의 예술인센터 인수에 쏠린 눈 [이슈 더보기] - 뉴스저널리즘",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TdXlzamhvMk9BZ2lIcldoWFYxQTl5djZQRlFVSDBXRU5FdmxLQlBYM1JFTnlUTks5RUZUcUFUX2MyRkNtNmNKazhkYWY3U2dERHNTSHZ0cHVSMExVR29yTW9GcTcwMkNRcm9F?oc=5",
+            "published": "Wed, 11 Feb 2026 08:00:00 GMT",
+            "summary": "현대하임의 예술인센터 인수에 쏠린 눈 [이슈 더보기]  뉴스저널리즘"
+          },
+          {
+            "title": "현대해상 최대주주 정몽윤, 현대해상 주식등의 수 1만3726주 증가…총 지분율 23.97% - 디지털투데이",
+            "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CMkp0REdoeEZ5U2F2ODVzSVBRdV9HYVpGLWxfdW5YYmtaRjhTVmVtSUFBRldSWUI4bUhRZTlEMGJKcnVvSUlDMmRRdDBxM3dLZVFFbkRPLUxqekhEWFY2WG9wdS1GVWlnWDFGenR6cUhmbEU?oc=5",
+            "published": "Wed, 08 Apr 2026 07:00:00 GMT",
+            "summary": "현대해상 최대주주 정몽윤, 현대해상 주식등의 수 1만3726주 증가…총 지분율 23.97%  디지털투데이"
+          }
+        ],
         "naver_news": [],
         "dcinside": []
       }
@@ -60,7 +246,38 @@
       "name": "송창현",
       "description": "42dot",
       "sources": {
-        "google_news": [],
+        "google_news": [
+          {
+            "title": "수천억 손에 쥔 송창현 사장의 퇴진…현대차, 답없는 자율주행에 수업료만 수조원 - 인베스트조선",
+            "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdnVmclkwYVR3RUh4NG9BWmYtWElCc3BvRTJycEZ6QnVKeEF5amNKZS12MlVuZHlzdzBaZ2syckhIYm5VMTg1bFYxQVF3TmxHOUFKUjZ0a2ZnVHkzdGdpNHNTZ0FNU3dzQ2VFMFFpRlR6clN6S205WDhmREhwY1RtTWxEMA?oc=5",
+            "published": "Thu, 04 Dec 2025 08:00:00 GMT",
+            "summary": "수천억 손에 쥔 송창현 사장의 퇴진…현대차, 답없는 자율주행에 수업료만 수조원  인베스트조선"
+          },
+          {
+            "title": "현대차 자율주행 수장 송창현 사임...'카메라'만 남기고 떠났다 - 디일렉",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nWnNfRURCQVhBcU00Ujl3a2hzZWRwTXRReV9UN2tEMDYtVkd1SHMyRzlpYnV6cENUa0dDdFhWcUxibXhHMWpwY29oT1J0cmtiSWVUbG1rX3pWOEpLZ19ISTFlSHFtUQ?oc=5",
+            "published": "Thu, 04 Dec 2025 08:00:00 GMT",
+            "summary": "현대차 자율주행 수장 송창현 사임...'카메라'만 남기고 떠났다  디일렉"
+          },
+          {
+            "title": "“성과는 없고 불만만”… 포티투닷이 현대차 발목 잡나 - 녹색경제신문",
+            "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FNENvODg3eXBsbVduTUdkQTdmLU4yTkxoZ0s0N0N3SnVOUTdrUjlpYXlETXplai1jUW9pQkdtZzdxQi1rUjBDWHNZamN3c2pvempDZ2kwanBsbFhkVWZuVmdvUFRPNVVZ?oc=5",
+            "published": "Mon, 22 Sep 2025 07:00:00 GMT",
+            "summary": "“성과는 없고 불만만”… 포티투닷이 현대차 발목 잡나  녹색경제신문"
+          },
+          {
+            "title": "현대차 SDV 사령탑 송창현 사장 사임…'독자 노선' 폐기 수순 - v.daum.net",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HaDRVbnhpck5kSnNLX3lpZ0pMTXRUR1dQcVUzN0xMa29sUXZlR0pUSV9YelNPVlpBdVA4UjdNYzN5a3NhcFN2UllBTUw1SmM?oc=5",
+            "published": "Thu, 04 Dec 2025 08:00:00 GMT",
+            "summary": "현대차 SDV 사령탑 송창현 사장 사임…'독자 노선' 폐기 수순  v.daum.net"
+          },
+          {
+            "title": "'전권' 행사한 송창현…후임자 물색 '난항' 예상 - 딜사이트",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1LR1N4UGRVZUd4dmRKQUFuS0pnc05jdHhEaDJtZkh6VlFwQVpQbXFITGxaWTFoR0FmYlB4Q1pYT0VfUEtXMVNJa1Z4MHhSdWs?oc=5",
+            "published": "Thu, 04 Dec 2025 08:00:00 GMT",
+            "summary": "'전권' 행사한 송창현…후임자 물색 '난항' 예상  딜사이트"
+          }
+        ],
         "naver_news": [],
         "dcinside": []
       }

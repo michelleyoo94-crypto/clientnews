@@ -1,54 +1,37 @@
 # 고객 뉴스 프로젝트
 
-## 월간 뉴스 요약 요청 처리 방법
+## 개요
+엑셀(`통합 문서1.xlsx`)에 있는 인물들의 네이버 뉴스를 Playwright로 수집해 HTML 페이지로 출력하는 프로젝트.
 
-사용자가 "한달치 뉴스", "월간 요약", "지난달 뉴스" 등을 요청하면 **엑셀의 모든 인물**을 대상으로 처리:
+## 실행 방법
+```bash
+cd "C:\Users\michelle\projects\고객 뉴스"
+python scrape_news.py
+```
+결과물: `뉴스_2026.html` (브라우저로 열기)
 
-1. **전체 뉴스 수집**:
-   ```bash
-   cd "C:\Users\michelle\projects\고객 뉴스"
-   python monthly_all.py
-   ```
+## 인물 목록 (`통합 문서1.xlsx`)
+| 이름 | 특징 | 검색쿼리 | 비고 |
+|------|------|----------|------|
+| 이하늬 | 배우 | 이하늬 배우 | |
+| 이혜영 | 탤런트 | 이혜영 이상민 | 제목에 "이혜영" 포함된 것만 필터 (이상민 전처, 재벌 재혼) |
+| 권오경 | 한양대교수 SDI사외이사 | 권오경 한양대교수 | |
+| 김병주 | MBK파트너스 | 김병주 MBK파트너스 | |
+| 서정진 | 셀트리온 | 서정진 셀트리온 | |
+| 정정이 | 현대해상 | 정정이 현대해상 | |
+| 송창현 | 42dot | 송창현 42dot | |
 
-2. **monthly_raw_all.json 읽기** — 각 인물별 수집된 기사 목록 확인
+## 스크립트 구조 (`scrape_news.py`)
+- **PEOPLE**: 3-tuple `(이름, 특징, 검색쿼리)` 리스트
+- **scrape_person()**: 네이버 뉴스 검색, 최대 5페이지 수집 (`start=1,11,21...`)
+  - `title_filter` 파라미터: 이혜영처럼 동명이인 있을 때 제목 필터링
+  - 날짜 없는 기사 → URL 패턴 추출 → meta 태그 방문 순으로 보완
+- **normalize_date()**: 상대날짜(`N일 전`, `N시간 전`, `어제`, `오늘`) → `YYYY.MM.DD` 변환
+  - `^정확히 일치^` 방식으로 `시사오늘` 같은 언론사명 오인식 방지
+- **date_from_url()**: URL에 포함된 날짜 패턴 추출 (예: `/20260505`)
+- **save_html()**: 탭 UI HTML 생성 — 인물별 탭 + 날짜별 그룹 카드
 
-3. **인물별 요약 작성** (한국어):
-   - 기간: 최근 30일
-   - 주요 이슈/사건 흐름 (시간순 bullet points)
-   - 반복 키워드/테마
-   - 긍정/부정 구분
-   - 전체 총평 1~2문장
-   - 기사 없으면 "이번 달 특이사항 없음"
-
-4. **monthly.html 생성** — monthly_all.py의 build_monthly_html() 호출:
-   ```python
-   # monthly_raw_all.json의 각 person에 summary 채운 뒤:
-   from monthly_all import build_monthly_html
-   import json
-   from pathlib import Path
-   data = json.load(open("monthly_raw_all.json", encoding="utf-8"))
-   # data["people"] 각 항목에 summary 필드 채우기
-   html = build_monthly_html(data["date_range"], data["people"])
-   Path("docs/monthly.html").write_text(html, encoding="utf-8")
-   ```
-
-5. **GitHub 푸시**:
-   ```bash
-   git add docs/monthly.html monthly_raw_all.json
-   git commit -m "월간 뉴스 요약 업데이트"
-   git push
-   ```
-
-## 인물 목록 (통합 문서1.xlsx)
-- 이하늬 — 배우
-- 이혜영 — 인플루언서
-- 권오경 — 한양대교수 SDI사외이사
-- 김병주 — MBK파트너스
-- 서정진 — 셀트리온
-- 정정이 — 현대해상
-- 송창현 — 42dot
-
-## 일간 자동 뉴스
-- 매일 아침 9시 KST 자동 실행
-- 결과: https://michelleyoo94-crypto.github.io/peopledetail/
-- 루틴: https://claude.ai/code/routines/trig_01JjU5h5jg7L7eb8FqJTtscL
+## 주의사항
+- 이혜영 검색 시 `이혜영 배우`로 검색하면 다른 사람이 나옴 → 반드시 `이혜영 이상민`으로 검색
+- 날짜 패턴 매칭은 fullmatch 사용 (`시사오늘`의 "오늘" 오인식 방지)
+- 네이버 뉴스 HTML 구조: 제목 링크는 `a[data-heatmap-target=".tit"]`, 날짜/언론사는 부모 3단계 컨테이너 내 span에서 추출
